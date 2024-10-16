@@ -25,6 +25,7 @@ express.json() for JSON body parsing
 express.static() for serving static files
 express-fileupload for managing file uploads
 method-override for supporting HTTP PUT and DELETE methods in forms
+
 7. Express.js - Server-Side Framework
 Express.js is the backbone of the application, handling routing, middleware integration, and overall server-side logic. It provides a flexible and powerful platform for building the application's backend, enabling efficient request handling and resource management.
 
@@ -41,6 +42,7 @@ Create: Users can upload new photos with associated titles and descriptions.
 Read: Photos are displayed in a paginated view, and users can view individual photo details.
 Update: Users can edit existing photo metadata.
 Delete: Photos can be deleted, removing both the database entry and the corresponding image file from the server.
+
 11. MVC Architecture
 The project follows the Model-View-Controller (MVC) design pattern, ensuring a clean separation of concerns:
 
