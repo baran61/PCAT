@@ -11,7 +11,13 @@ const photoController = require('./controllers/photoControlers')
 const app = express();
 
 // connect DB
-mongoose.connect('mongodb://localhost/pcat-test-db');
+//mongoose.connect('mongodb://localhost/pcat-test-db');
+mongoose.connect('mongodb+srv://azakbaran:baran123@cluster0.u04jp.mongodb.net/')
+.then(() => {
+  console.log('DB connected !')
+}).catch((err) => {
+  console.log(err)
+})
 
 //TEMPLATE ENGİNE
 
@@ -49,7 +55,8 @@ app.put('/photos/:id', async (req, res) => {
   res.redirect(`/photos/${req.params.id}`)
 });
 
-const port = 3000;
-app.listen(3000, () => {
+//const port = 3000;
+const port = process.env.PORT || 5001;
+app.listen(port, () => {
   console.log(`Sunucu ${port} portunda başlatıldı !`);
 });
