@@ -1,7 +1,7 @@
-#3PCAT - Photo Catalog Application
+# PCAT - Photo Catalog Application
 PCAT is a dynamic photo catalog application built using Node.js, Express, MongoDB, and EJS template engine. This project demonstrates key aspects of modern web development, including CRUD operations, file uploads, pagination, and deployment in a cloud environment. Below are the core topics and technologies implemented throughout the project.
 
-##Key Features and Technologies
+## Key Features and Technologies
 1. Prettier - Code Formatting
 To maintain consistent code style and readability across the project, Prettier is utilized for automated code formatting. This ensures clean, well-structured code that adheres to industry best practices.
 
